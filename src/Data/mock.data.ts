@@ -1,4 +1,4 @@
-export const MOCK_GENTLEMEN = [
+export const getMockData = () => [
   {
     id: 1,
     name: "Bertin Osborne",
