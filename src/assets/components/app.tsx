@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../Button/Button";
-import { Info } from "../Info/Info";
+import { Button } from "./button";
+import { Info } from "./info";
 import "./App.css";
 
 function App() {
