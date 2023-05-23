@@ -1,9 +1,11 @@
+import React from "react";
 import { getMockData } from "../Data/mock.data";
 import { GentlemanData } from "../Types/mock.type";
 
-export function Gentleman() {
+const Gentleman = () => {
   const mockData: GentlemanData[] = getMockData();
-  const gentleman = ({
+
+  const renderGentleman = ({
     id,
     name,
     status,
@@ -47,7 +49,9 @@ export function Gentleman() {
 
   return (
     <main className="main">
-      <ul className="gentlemen">{mockData.map(gentleman)}</ul>
+      <ul className="gentlemen">{mockData.map(renderGentleman)}</ul>
     </main>
   );
-}
+};
+
+export default Gentleman;
